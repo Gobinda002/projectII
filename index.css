@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
 
 * {
-    font-family: 'Edu AU VIC WA NT Hand';
+    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,14 @@
 }
 
 :root {
-    --MainColor: #2B0F0E;
+    --Main: #2B0F0E;
+    --baground : #3a2306;
+
+}
+
+nav {
+    position: relative;
+   cursor: pointer;
 }
 
 .firstnav {
@@ -19,26 +26,45 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-
-    & img {
-        border-radius: 16px;
-        height: 3rem;
-        width: 3rem;
-    }
 }
 
+.firstnav img {
+    border-radius: 16px;
+    height: 3rem;
+    width: 3rem;
+}
 
 .secnav {
-   
     display: flex;
-    background-color: #2B0F0E;
+    background-color: var(--Main);
     color: #fff;
-    height: 3.5rem;
+    height: 4rem;
     align-items: center;
 }
 
-.secnav ul{
+.secnav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;  
+}
+
+.secnav ul {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.secnav li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.secnav input[type="search"] {
+    margin-left: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.home {
+    height: 100rem;
 }

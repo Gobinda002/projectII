@@ -16,9 +16,11 @@
 }
 section{
     max-width: 100%
+
 }
 .container{
     margin: 0px 10px;
+
 }
 
 nav {
@@ -79,10 +81,22 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 
+
+}
+.element{
+    padding: 13% 43%; 
+    display: flex;
+    gap: 2rem;
 }
 
-.s {
-  
- 
+.text{
+    font-size: 8vh;
+   
+    
 }
 
+.textlogo{
+    height: 6.8rem;
+    width: 6rem;
+   
+}

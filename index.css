@@ -15,7 +15,7 @@
 
 }
 section{
-    max-width: 100%
+    max-width: 100%;
 
 }
 .container{
@@ -99,4 +99,11 @@ nav {
     height: 6.8rem;
     width: 6rem;
    
+}
+
+@media screen and (width:600px) {
+    .firstnav{
+        background-color: #000;
+    }
+    
 }

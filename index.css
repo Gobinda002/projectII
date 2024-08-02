@@ -19,11 +19,12 @@ html {
 }
 
 section {
-    max-width: 100%;
+    width: 100%;
 }
 
 .container {
     margin: 0px 10px;
+    width: 100%;
 }
 
 header {
@@ -47,14 +48,14 @@ nav {
     height: 4rem;
     align-items: center;
     position: relative;
-    transition: top 0.3s;
+    transition: top 1s;
+    z-index: 10;
 }
 
-nav .sticky {
+nav.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
 }
 
 nav ul {
@@ -66,6 +67,10 @@ nav ul {
 nav li {
     margin: 0 1rem;
     cursor: pointer;
+}
+
+nav li a {
+    color: white;
 }
 
 nav input[type="search"] {
@@ -99,7 +104,10 @@ nav input[type="search"] {
 }
 
 @media screen and (max-width: 600px) {
+    section{
+        width: 100%;
+    }
     .firstnav {
-        background-color: #000;
+        width: 100%;
     }
 }

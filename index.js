@@ -1,7 +1,7 @@
 // index.js
 window.addEventListener('scroll', function() {
-    const firstnav = document.querySelector('.firstnav');
-    const secnav = document.querySelector('.secnav');
+    const header = document.getElementsByTagName('header');
+    const secnav = document.getElementsByTagName('nav');
     const firstnavHeight = firstnav.offsetHeight;
 
     if (window.scrollY >= firstnavHeight) {
